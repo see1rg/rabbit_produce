@@ -1,4 +1,4 @@
-package com.see1rg.rabbitapp;
+package com.see1rg.rabbitproduce;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

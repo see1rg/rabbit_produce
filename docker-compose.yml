@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+  postgres1:
+    image: 'postgres:13'
+    container_name: 'java-postgres-1'
+    environment:
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_PASSWORD=postgres'
+      - 'POSTGRES_DB=database'
+
+  postgres2:
+    image: 'postgres:13'
+    container_name: 'java-postgres-2'
+    environment:
+      - 'POSTGRES_USER=postgres2'
+      - 'POSTGRES_PASSWORD=postgres'
+      - 'POSTGRES_DB=database'
+
+  postgres3:
+    image: 'postgres:13'
+    container_name: 'java-postgres-3'
+    environment:
+      - 'POSTGRES_USER=postgres3'
+      - 'POSTGRES_PASSWORD=postgres'
+      - 'POSTGRES_DB=database'
+
+  rabbitmq:
+    image: 'rabbitmq:3-management'
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  app1:
+    build:
+      context: ./rabbitAppConsume
+    container_name: 'java-produce'
+    ports:
+      - "9001:9000"
+
+  app2:
+      build:
+        context: ./rabbitAppProduce
+      container_name: 'java-consume'
+      ports:
+        - "9002:9000"
+      links:
+        - 'postgres1:'
+        - 'postgres2:'
+        - 'postgres3:'

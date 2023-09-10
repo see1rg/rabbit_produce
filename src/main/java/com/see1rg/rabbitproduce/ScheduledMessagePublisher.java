@@ -1,4 +1,4 @@
-package com.see1rg.rabbitapp;
+package com.see1rg.rabbitproduce;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
