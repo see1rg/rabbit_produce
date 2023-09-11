@@ -51,3 +51,4 @@ public class MQProducer {
 - PostgreSQL для хранения данных. Убедитесь, что PostgreSQL также настроен и доступен, если это необходимо для функциональности проекта.
 
 ![Spring Boot Logo](https://www.vectorlogo.zone/logos/springio/springio-icon.svg)          ![PostgreSQL Logo](https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg)           ![RabbitMQ Logo](https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg)
+![Docker Logo](https://www.vectorlogo.zone/logos/docker/docker-icon.svg)
