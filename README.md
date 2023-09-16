@@ -28,6 +28,8 @@ public class MQProducer {
 
 ## Как начать использовать проект
 
+Для создания контейнеров при помощи Docker compose выполните инструкцию по ссылке [rabbitConsume](https://github.com/see1rg/rabbitConsume) 
+
 Для начала использования этого проекта, выполните следующие шаги:
 
 1. **Шаг 1**: Установите RabbitMQ и настройте его соединение с приложением, при необходимости в файле `application.properties`. Ссылка [rabbitMQ](https://www.rabbitmq.com/download.html)
@@ -49,6 +51,9 @@ public class MQProducer {
 - RabbitMQ для обработки сообщений в очередях.
 
 - PostgreSQL для хранения данных. Убедитесь, что PostgreSQL также настроен и доступен, если это необходимо для функциональности проекта.
+  
+- Liquibase для управления миграциями базы данных.
 
 ![Spring Boot Logo](https://www.vectorlogo.zone/logos/springio/springio-icon.svg)          ![PostgreSQL Logo](https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg)           ![RabbitMQ Logo](https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg)
-![Docker Logo](https://www.vectorlogo.zone/logos/docker/docker-icon.svg)
+![Docker Logo](https://www.vectorlogo.zone/logos/docker/docker-icon.svg)     <img src="https://www.liquibase.com/wp-content/uploads/2020/05/Liquibase_logo_vertical_RGB.svg" alt="Liquibase Logo" width="70" height="70">
+
