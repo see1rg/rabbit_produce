@@ -32,11 +32,11 @@ public class MQProducer {
 
 Для начала использования этого проекта, выполните следующие шаги:
 
-1. **Шаг 1**: Установите RabbitMQ и настройте его соединение с приложением, при необходимости в файле `application.properties`. Ссылка [rabbitMQ](https://www.rabbitmq.com/download.html)
+1. Установите RabbitMQ и настройте его соединение с приложением, при необходимости в файле `application.properties`. Ссылка [rabbitMQ](https://www.rabbitmq.com/download.html)
 
-2. **Шаг 2**: Установите приложение по ссылке [rabbitConsume](https://github.com/see1rg/rabbitConsume) и запустите.
+2. Установите приложение по ссылке [rabbitConsume](https://github.com/see1rg/rabbitConsume) и запустите.
    
-3. **Шаг 3**: Запустите приложение. Сообщения будут автоматически отправляться в очередь с заданным интервалом и записываться в 3-х БД.
+3. Запустите приложение. Сообщения будут автоматически отправляться в очередь с заданным интервалом и записываться в 3-х БД.
 
 
 Теперь вы можете использовать проект для отправки и обработки сообщений в RabbitMQ очередях.
@@ -46,7 +46,7 @@ public class MQProducer {
 
 Проект использует следующие зависимости:
 
-- Spring Framework для управления компонентами и настройки бинов.
+- Spring Framework для управления компонентами и настройками бинов.
 
 - RabbitMQ для обработки сообщений в очередях.
 
@@ -54,6 +54,9 @@ public class MQProducer {
   
 - Liquibase для управления миграциями базы данных.
 
-![Spring Boot Logo](https://www.vectorlogo.zone/logos/springio/springio-icon.svg)          ![PostgreSQL Logo](https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg)           ![RabbitMQ Logo](https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg)
-![Docker Logo](https://www.vectorlogo.zone/logos/docker/docker-icon.svg)     <img src="https://www.liquibase.com/wp-content/uploads/2020/05/Liquibase_logo_vertical_RGB.svg" alt="Liquibase Logo" width="70" height="70">
+![Spring](https://img.shields.io/badge/-Spring-success?style=flat-square&logo=spring&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-blue?style=flat-square&logo=postgresql&logoColor=white)
+![Liquibase](https://img.shields.io/badge/-Liquibase-blueviolet?style=flat-square&logo=liquibase&logoColor=white)
+![Maven](https://img.shields.io/badge/-Maven-orange?style=flat-square&logo=apache-maven&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-orange?style=flat-square&logo=rabbitmq&logoColor=white)
 
