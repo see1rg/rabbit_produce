@@ -2,7 +2,7 @@
 
 Этот проект представляет собой пример простой системы публикации сообщений в 3-х очередях с испльзованием fanout типа обмена 
 и записью в 3-х разных БД PostgreSQL В проекте используется Spring Framework и RabbitMQ. 
-Для полной функциональности проекта, необходимо установить и настроить приложение [rabbitConsume](https://github.com/see1rg/rabbitConsume).
+Для полной функциональности проекта, необходимо установить и настроить приложение [rabbit consume](https://github.com/see1rg/rabbitConsume).
 
 ### Класс `ScheduledMessagePublisher`
 
@@ -28,13 +28,13 @@ public class MQProducer {
 
 ## Как начать использовать проект
 
-Для создания контейнеров при помощи Docker compose выполните инструкцию по ссылке [rabbitConsume](https://github.com/see1rg/rabbitConsume) 
+Для создания контейнеров при помощи Docker compose выполните инструкцию по ссылке [rabbit consume](https://github.com/see1rg/rabbit_consume) 
 
 Для начала использования этого проекта, выполните следующие шаги:
 
 1. Установите RabbitMQ и настройте его соединение с приложением, при необходимости в файле `application.properties`. Ссылка [rabbitMQ](https://www.rabbitmq.com/download.html)
 
-2. Установите приложение по ссылке [rabbitConsume](https://github.com/see1rg/rabbitConsume) и запустите.
+2. Установите приложение по ссылке [rabbit consume](https://github.com/see1rg/rabbit_consume) и запустите.
    
 3. Запустите приложение. Сообщения будут автоматически отправляться в очередь с заданным интервалом и записываться в 3-х БД.
 
